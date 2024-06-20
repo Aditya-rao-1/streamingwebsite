@@ -1,0 +1,18 @@
+body{
+    background-image: url(edi.jpg); 
+
+  background-attachment: fixed;
+}
+/* linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.388)), */
+.chngcol{
+background-color: #7acb17;
+opacity: 80%;
+}
+.logibox{
+background-color: rgba(0, 0, 0, 0.739);
+width: 400px;
+max-height: 800px;
+min-height: 400px;
+border-radius: 5px;
+padding: 30px;
+}

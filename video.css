@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.menu-bar {
+    border-radius: 25px;
+    height: fit-content;
+    display: inline-flex;
+    backdrop-filter: blur(1px);
+    align-items: center;
+    padding: 0 10px;
+    margin: 0px 0 0 0;
+  }
+  
+  .menu-bar li {
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+  }
+  
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+  }
+  
+  .menu-bar li:hover {
+    color: black;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-content: space-between;
+    background-image: linear-gradient(black,rgba(54, 54, 54, 0.905));
+}
+
+.video-container {
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(245, 245, 245, 0.303);
+  margin-right: 30px;
+
+}
+.video-container{
+    color: white;
+}
+
+
+.video-playlist {
+    padding: 10px;
+    
+
+}
+
+.video-playlist h2 {
+    margin-left: 10px;
+    padding-top: 20px;
+  
+ 
+}
+
+.video-container iframe {
+    width: 730px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.playlist-selector {
+    width: 900px ;
+padding-left: 5px;   
+    overflow-x: scroll;
+  
+    border-radius: 10px;
+  
+    border: 2px solid rgba(245, 245, 245, 0.303);
+}
+
+.playlist-selector button {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    margin: 3px;
+  
+    cursor: pointer;
+}
+
+.playlist-selector button:hover {
+    background-color:rgba(200, 200, 200, 0.991);
+}
+
+.active {
+    background-color: rgba(220, 34, 34, 0.557);
+}
+
+h4 {
+    margin: 5px;
+    color: white;
+}
+
+.playlist-selector button img {
+    width: 100px;
+    height: 60px;
+    border-radius: 5px 0px  0px 5px;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+

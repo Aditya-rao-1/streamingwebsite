@@ -1,0 +1,160 @@
+.menu-bar {
+  border-radius: 25px;
+  height: fit-content;
+  display: inline-flex;
+  backdrop-filter: blur(1px);
+  align-items: center;
+  padding: 0 10px;
+  margin: 0px 0 0 0;
+}
+
+.menu-bar li {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 25px;
+}
+
+.menu-bar li:hover::before {
+  background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+  box-shadow: 0px 3px 20px 0px black;
+  transform: scale(1.2);
+}
+
+.menu-bar li:hover {
+  color: black;
+}
+
+.btnsea{
+    margin-top: 50px;
+    margin-left: 65px;
+}
+.h1sea{
+    margin-top: 80px;
+    margin-left: 65px;
+font-family: 'Black Ops One';
+
+}
+.para1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+padding-top: 50px;
+padding-left: 65px;
+width: 65%;
+}
+span {
+    display: inline-block; /* or use display: inline; */
+    margin-right: 20px; /* Adjust spacing between spans */
+    font-weight:bold;
+    color: #e24646;
+    margin-top: 20px;
+    
+  }
+
+  .bgimg {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(130, 129, 129, 0)), url(./f.png);
+    background-size: cover;
+    
+    color: white; 
+    padding: 10px; 
+    height: 800px;
+    width: 100%;
+  }
+  .bgimgalien {
+    background-image: url(./alien.png);
+    background-size: cover;
+    
+    color: white; 
+    padding: 10px; 
+    height: 800px;
+    width: 100%;
+  }
+  .bgimgulti {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(255, 250, 250, 0)), url(./ulti.png);
+    background-size: cover;
+    
+    color: white; 
+    padding: 10px; 
+    height: 800px;
+    width: 100%;
+  }
+  .bgimgomni {
+    background-image: url(./omni.png);
+    background-size: cover;
+    
+    color: white; 
+    padding: 10px; 
+    height: 800px;
+    width: 100%;
+  }
+  .epi {
+    color: #f3f3f3;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+.textcol{
+  color: #f3f3f3;
+}
+
+.eps:hover{
+  cursor: pointer;
+  filter: grayscale(50%);
+  padding: 1% 1% 1% 1% ;
+  background-color: rgba(200, 200, 200, 0.332);
+  transition-delay: 0.1s;
+  z-index: 2;
+  }
+  
+.playbtn{
+width: 150px;
+height: 70px;
+margin-left: 65px;
+margin-top: 55px;
+padding: 20px;
+display: flex;
+align-items: center;
+}
+.playbtn svg{
+  margin-right: 15px;
+}
+.ep1img {
+  position: relative;
+
+}
+.ep1img img{
+  max-height: 200px;
+  max-width: 350px;
+}
+.epbut {
+  position: absolute;
+  width: 350px;
+  top: 80px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+
+#oval-1{
+  fill:white; transition: ease-in 0.2s all;
+}
+.ep1img:hover .epbut {
+  opacity: 1;
+}
